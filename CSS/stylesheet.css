@@ -1,0 +1,243 @@
+@font-face {
+  font-family: Nunito;
+  src: url(../Resources/Fonts/Nunito-VariableFont_wght.ttf);
+}
+
+:root{
+  --main_color: #FFECB3;
+  --top_gradient_color: #FFFFEB;
+  --secondary_color: rgb(50, 4, 77);
+}
+
+nav{
+  text-align: center;
+  color: var(--main_color);
+  background-color: var(--secondary_color);
+  min-height: 120px;
+}
+
+
+ul{
+  margin: 0px;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  ul {
+    text-align: center;
+  }
+}
+
+a{
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.active_page{
+  font-weight: bold;
+}
+
+.profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--secondary_color);
+}
+
+body {
+  margin: 0px;
+  background-color: var(--top_gradient_color);
+  background-image: linear-gradient(to bottom, var(--top_gradient_color), var(--main_color));
+  min-height: 100vh;
+  font-family: Nunito;
+  color: var(--secondary_color);
+}
+
+main{
+    text-align: center;
+    margin: 40px auto;
+    justify-content: center;
+}
+
+
+.box {
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid var(--secondary_color);
+  border-radius: 15px;
+  padding: 15px;
+  min-height: 95px;
+  max-width: 800px;
+  margin: 40px auto;
+  display: block;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+@media screen and (max-width: 900px) {
+  .box {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid var(--secondary_color);
+    border-radius: 15px;
+    padding: 15px;
+    min-height: 95px;
+    max-width: 450px;
+    margin: 40px auto;
+    display: block;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  max-width: 650px;
+}
+
+@media screen and (max-width: 700px) {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 450px;
+  }
+}
+
+input{
+  min-height: 30px;
+}
+
+textarea{
+  min-height: 300px;
+}
+
+::placeholder{
+  font-family: Nunito;
+  font-size: 15px;
+}
+
+.title{
+  text-align: center;
+}
+
+button{
+  min-width: 200px;
+  min-height: 30px;
+  align-self: center;
+  margin-top: 15px;
+  background-color: var(--secondary_color);
+  color: var(--main_color);
+  font-family: Nunito;
+  font-size: medium;
+  border-radius: 10px;
+}
+
+.skills_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 100px;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .skills_container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 100px;
+    justify-items: center;
+  }
+}
+
+
+.skills_container article{
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid var(--secondary_color);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 30px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+@media screen and (max-width: 700px) {
+  .skills_container article{
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid var(--secondary_color);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 30px;
+    width: 100%;
+    max-width: 450px;
+    max-height: 200px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+}
+
+.skill_title{
+  text-decoration: underline;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.logo_container{
+  display: flex;
+}
+
+.logo{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: Nunito;
+}
+
+.logo img{
+  max-height: 30px;
+}
+
+.projects_container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects_container .box{
+  max-width: 1100px;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .projects_container .box{
+    max-width: 800px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .projects_container .box{
+    max-width: 450px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.projects_container p{
+  font-size: 20px;
+}
+
+.projects_container img{
+  max-width: 600px;
+}
+
+@media screen and (max-width: 900px) {
+  .projects_container img{
+    width: 300px;
+  }
+}
