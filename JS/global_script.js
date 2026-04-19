@@ -32,11 +32,14 @@ var theme_index = 0;
 
 const theme_changer_button = document.getElementById("theme_changer");
 
-let saved_theme_index = localStorage.getItem("theme_index");
-if (saved_theme_index != null){
-    theme_index = saved_theme_index;
-    theme_change_instant(saved_theme_index);
-} 
+let saved_theme_index = parseInt(localStorage.getItem("theme_index"), 10);
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (saved_theme_index != null){
+        theme_index = saved_theme_index;
+        theme_change_instant(saved_theme_index);
+    } 
+});
 
 theme_changer_button.addEventListener('click', () => {
     theme_change();
