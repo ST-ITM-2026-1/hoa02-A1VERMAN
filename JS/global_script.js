@@ -35,10 +35,13 @@ const theme_changer_button = document.getElementById("theme_changer");
 let saved_theme_index = parseInt(localStorage.getItem("theme_index"), 10);
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    if (saved_theme_index != null){
+    if (typeof saved_theme_index === 'number' && !isNaN(saved_theme_index)){
         theme_index = saved_theme_index;
         theme_change_instant(saved_theme_index);
-    } 
+    }
+    else{
+        theme_index = 0;
+    }
 });
 
 theme_changer_button.addEventListener('click', () => {
@@ -94,7 +97,6 @@ function theme_change(index=null){
     localStorage.setItem('theme_index', theme_index);
 
     contents = theme_content[theme_list[theme_index]];
-
     theme_changer_button.innerHTML = contents["button_text"];
     change_color_variable("--main_color", contents["main_color"]);
     change_color_variable("--top_gradient_color", contents["top_gradient_color"]);
