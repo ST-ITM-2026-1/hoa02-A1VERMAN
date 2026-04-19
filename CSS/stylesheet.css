@@ -6,7 +6,7 @@
 :root{
   --main_color: #FFECB3;
   --top_gradient_color: #FFFFEB;
-  --secondary_color: rgb(50, 4, 77);
+  --secondary_color: #32044D;
 }
 
 nav{
@@ -34,7 +34,7 @@ a{
   font-size: 20px;
   margin-right: 10px;
   text-decoration: none;
-  color: white;
+  color: var(--main_color);
 }
 
 .active_page{
@@ -135,6 +135,12 @@ button{
   font-family: Nunito;
   font-size: medium;
   border-radius: 10px;
+}
+
+#theme_changer{
+  align-self: left;
+  min-width: 100px;
+  margin: 0px;
 }
 
 .skills_container{
