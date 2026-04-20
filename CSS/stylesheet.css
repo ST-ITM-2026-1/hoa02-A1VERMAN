@@ -249,3 +249,28 @@ button{
     width: 300px;
   }
 }
+
+#github_profile {
+    text-align: center;
+    flex: 0 0 300px;
+    margin-left: 150px;
+}
+
+#repositories_container {
+  margin-right: 150px;
+  text-align: center;
+}
+
+.info_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 75vh;
+}
+
+#social_count{
+  text-align: center;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+}
