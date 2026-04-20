@@ -58,6 +58,13 @@ body {
   font-family: Nunito;
   color: var(--secondary_color);
 }
+@media screen and (max-width: 500px) {
+  body{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
 
 main{
     text-align: center;
@@ -188,6 +195,14 @@ button{
   }
 }
 
+@media screen and (max-width: 500px) {
+  .skills_container article{
+    max-width: 270px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
 .skill_title{
   text-decoration: underline;
   margin-top: 0px;
@@ -236,6 +251,16 @@ button{
   }
 }
 
+@media screen and (max-width: 500px) {
+  .projects_container .box{
+    max-width: 280px;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+  }
+}
+
+
 .projects_container p{
   font-size: 20px;
 }
@@ -247,6 +272,11 @@ button{
 @media screen and (max-width: 900px) {
   .projects_container img{
     width: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .projects_container img{
+    width: 200px;
   }
 }
 
@@ -274,12 +304,15 @@ button{
   margin-right: 150px;
   text-align: center;
   font-size: larger;
-  text-decoration: underline;
 }
 @media screen and (max-width: 750px) {
   #repositories_container {
     margin-right: 0px;
   }
+}
+
+.underline{
+  text-decoration: underline;
 }
 
 .info_container {
@@ -333,6 +366,13 @@ h3 a{
   max-width: 300px;
   margin: 15px;
   word-wrap: normal;
+}
+
+@media screen and (max-width: 500px) {
+  .repository_box{
+    max-width: 250px;
+    min-width: 250px;
+  }
 }
 
 .repository_title{
